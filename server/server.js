@@ -7,8 +7,8 @@ import multer from "multer";
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
-const ROOT = __dirname;                    // current folder = /server
-const PUB  = path.join(ROOT, "public");    // /server/public
+const ROOT = __dirname;
+const PUB = path.join(ROOT, "public");
 const DATA_DIR = path.join(PUB, "data");
 const CATALOG  = path.join(DATA_DIR, "catalogue.json");
 
