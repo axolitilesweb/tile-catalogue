@@ -1,0 +1,112 @@
+🧩 Copy-paste prompt (fill in the blanks)
+Create a new catalogue theme for my project.
+
+Theme key (one word, lowercase): _____
+Theme label (admin dropdown): _____
+
+Uploads I need in Admin (fields):
+
+Files (required/optional, single/multiple):
+
+_____ — file — (required? yes/no) — (single/multiple) — accepted: image/*
+
+_____ — file — (required? yes/no) — (single/multiple) — accepted: image/*
+
+_____ — file — (optional) — (single) — accepted: image/*
+(add more as needed; video/mp4 is okay too)
+
+Texts (optional):
+
+size_text (example “600x1200”)
+
+_____ (any extra text you want)
+
+Layout (main page):
+
+Hero area: _____ (which field?)
+
+Secondary images grid: _____ (which field? max how many?)
+
+Show label position: top / center / bottom
+
+Show brand logo: yes/no (position?)
+
+Show size badge or size_text: badge / text / none (where?)
+
+Include video on main page: yes/no (which field?)
+
+Preview pages (separate pages inside this theme):
+
+Source images: _____ (field; single or multiple)
+
+One preview per page: yes
+
+Any caption/overlay on preview pages? _____
+
+CSS look (override per theme CSS):
+
+Accent color: #_____
+
+Page background: #_____
+
+Any special rules (rounded corners, grid gaps, font sizes): _____
+
+Notes / constraints:
+
+Image aspect ratios you expect: _____
+
+Anything special about ordering or visibility: _____
+
+Please return:
+
+Admin addition for window.EXTRA_THEME_CONFIGS
+
+Renderer for window.EXTRA_THEME_RENDERERS that returns [mainPage, ...previewPages]
+
+A starter public/themes/<theme>.css with the overrides above
+
+🔎 Example filled prompt (you can tweak)
+Theme key: magazine
+Theme label: Magazine (Hero + Gallery)
+
+Uploads:
+
+Files:
+
+hero — file — required — single — image/*
+
+gallery — file — optional — multiple — image/*
+
+badge — file — optional — single — image/*
+
+Texts:
+
+size_text
+
+Layout (main):
+
+Hero area uses hero full width inside .image-box
+
+No secondary grid on main page
+
+Label at top with label-line
+
+Show brand logo top-right
+
+Size badge: prefer badge, else show size_text in a pill at bottom-right
+
+No video
+
+Preview pages:
+
+Use every image from gallery (one per page), full-width .main-image
+
+No captions
+
+CSS:
+
+Accent #7c3aed, page bg #fffafc, rounded thumbs, soft shadow
+
+Notes:
+
+Hero can be 3:2 or 4:3; gallery any portrait/landscape
